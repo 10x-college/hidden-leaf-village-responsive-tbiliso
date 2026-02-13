@@ -24,6 +24,8 @@ header {
 .hdr-main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 .hdr-main .hdr-title {
@@ -33,6 +35,8 @@ header {
 .hdr-main .hdr-title-logo {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 0.5rem;
   justify-content: start;
 }
@@ -60,6 +64,31 @@ header {
   height: 3.7rem;
   margin: 1.7rem 1.3rem;
   border-radius: 0.8rem;
+}
+
+body .body-hdr {
+  background-image: linear-gradient(rgba(42, 42, 42, 0.9), rgba(42, 42, 42, 0.9)), url(../assets/images/BackgroundIcon.png);
+  background-color: #2A2A2A;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15.1rem 12.6rem;
+  color: #FFFFFF;
+  padding: 13.7rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .body-hdr h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: center;
+}
+body .body-hdr p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
