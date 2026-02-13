@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Manrope:wght@200..800&family=Noto+Serif+Georgian:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html {
+    font-size: 62.5%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+$main-color: #FF6B1A;
+$secondary-color: #2A2A2AE5;
+$title-font-size: 2.4rem;
+$title-font-size: 2.4rem;
+$regular-font-size: 1.6rem;
+
+@mixin flex-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin title-text{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+body {
+    max-width: 37.5rem;
+}
+
+.hdr-main {
+    @include flex-col-center;
+    background-color: $main-color;
+    padding: 4rem;
+
+    .hdr-title-logo {
+        @include flex-row-center;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+
+}
