@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Manrope:wght@200..800&family=Noto+Serif+Georgian:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+
 html {
     font-size: 62.5%;
 }
@@ -18,14 +19,21 @@ $primary-text-color: #FFFFFF;
 $secondary-text-color:#666666;
 $bg-black: #1E1E1E;
 $bg-image: rgba(#2A2A2A, 0.9);
+$card-title-color:#000000;
+$regular-font-color: #666666;
+$footer-color: #1A1A1A;
 $title-font-size: 2.4rem;
 $regular-font-size: 1.6rem;
+$smaller-font-size: 1.2rem;
 $small-font-size: 1.4rem;
 $logo-width: 2.4rem;
 $logo-height: 2.018rem;
 $btn-width:10.3rem;
 $btn-height:3.7rem;
 $my-white: rgba(#FFFFFF, 0.9);
+$card-width-size: 32.4rem;
+$card-height-size:20rem;
+
 
 @mixin flex-col-center {
     display: flex;
@@ -37,15 +45,22 @@ $my-white: rgba(#FFFFFF, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 @mixin flex-row-center {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
-
+@mixin flex-row-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    
+}
 @mixin title-text {
     font-size: 2.4rem;
     font-weight: 700;
@@ -53,16 +68,24 @@ $my-white: rgba(#FFFFFF, 0.9);
 }
 
 
+body{
+    @include flex-col-center();
+}
 
-body {
-
+.body-sec{
     max-width: 37.5rem;
-    background-color: $bg-black;
-
+    @include flex-col-center();
 }
 header{
     color: $primary-text-color;
     background-color: $main-color
+}
+
+h2{
+    font-size: $title-font-size;
+    font-weight: 700;
+    line-height: 100%;
+    color:$card-title-color;
 }
 .hdr-main {
     @include flex-col-left;
@@ -96,7 +119,7 @@ header{
     }
 
     .hdr-menu-sec{
-        background-color: $secondary-color;
+        background-color: $footer-color;
         width: 100%;
         padding: 0;
 
@@ -110,8 +133,11 @@ header{
     }
 }
 
-body{
-    
+.body-main{
+    @include flex-col-center;
+    gap: 3rem;
+    background-color: #F5F5F5;
+    padding-bottom: 16rem;
     .body-hdr{
         // background-image:url(../assets/images/BackgroundIcon.png);
         background-image: linear-gradient($bg-image, $bg-image), url(../assets/images/BackgroundIcon.png);
@@ -122,9 +148,11 @@ body{
         color: $primary-text-color;
         padding: 13.7rem 2.4rem;
         @include flex-col-center;
+        gap: 1.5rem;
         h2{
             @include title-text; 
             text-align: center;
+            color: $primary-text-color;
         }
         p{
             color: $my-white;
@@ -132,4 +160,30 @@ body{
             text-align: center;
         }
     }
+    .card{
+        width: $card-width-size;
+        height: $card-height-size;
+        border-radius: 1.2rem;
+        border-top: 0.4rem $main-color solid;
+        background-color: $primary-text-color;
+        padding: 2.4rem;
+        @include flex-col-left;
+        gap: 1rem;
+        .card-hdr{
+            @include flex-row-left;
+            gap: 0.8rem;
+        }
+        p{
+            font-size: $regular-font-size;
+            color: $regular-font-color;
+        }
+    }
+}
+
+footer{
+    padding: 3.8rem 1.9rem;
+    width: 100%;
+    background-color: $footer-color;
+    font-size: $smaller-font-size;
+    color: $primary-text-color;
 }

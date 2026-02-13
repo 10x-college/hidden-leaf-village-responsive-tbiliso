@@ -12,8 +12,18 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-sec {
   max-width: 37.5rem;
-  background-color: #1E1E1E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -21,11 +31,18 @@ header {
   background-color: #FF6B1A;
 }
 
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 100%;
+  color: #000000;
+}
+
 .hdr-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   width: 100%;
 }
 .hdr-main .hdr-title {
@@ -54,7 +71,7 @@ header {
   font-size: 1.4rem;
 }
 .hdr-main .hdr-menu-sec {
-  background-color: rgba(42, 42, 42, 0.8980392157);
+  background-color: #1A1A1A;
   width: 100%;
   padding: 0;
 }
@@ -66,7 +83,16 @@ header {
   border-radius: 0.8rem;
 }
 
-body .body-hdr {
+.body-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: #F5F5F5;
+  padding-bottom: 16rem;
+}
+.body-main .body-hdr {
   background-image: linear-gradient(rgba(42, 42, 42, 0.9), rgba(42, 42, 42, 0.9)), url(../assets/images/BackgroundIcon.png);
   background-color: #2A2A2A;
   background-repeat: no-repeat;
@@ -78,17 +104,51 @@ body .body-hdr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
 }
-body .body-hdr h2 {
+.body-main .body-hdr h2 {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 100%;
   text-align: center;
+  color: #FFFFFF;
 }
-body .body-hdr p {
+.body-main .body-hdr p {
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.6rem;
   text-align: center;
+}
+.body-main .card {
+  width: 32.4rem;
+  height: 20rem;
+  border-radius: 1.2rem;
+  border-top: 0.4rem #FF6B1A solid;
+  background-color: #FFFFFF;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.body-main .card .card-hdr {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 0.8rem;
+}
+.body-main .card p {
+  font-size: 1.6rem;
+  color: #666666;
+}
+
+footer {
+  padding: 3.8rem 1.9rem;
+  width: 100%;
+  background-color: #1A1A1A;
+  font-size: 1.2rem;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
