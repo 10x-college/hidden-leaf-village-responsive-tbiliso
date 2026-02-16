@@ -153,6 +153,7 @@ h2 {
     @include flex-col-center;
     gap: 3.9rem;
     background-color: #F5F5F5;
+    display: none;
 
     .body-hdr {
         // background-image:url(../assets/images/BackgroundIcon.png);

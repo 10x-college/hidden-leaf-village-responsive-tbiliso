@@ -80,6 +80,7 @@ h2 {
   align-items: center;
   gap: 3.9rem;
   background-color: #F5F5F5;
+  display: none;
 }
 .body-main .body-hdr {
   background-image: linear-gradient(rgba(42, 42, 42, 0.9), rgba(42, 42, 42, 0.9)), url(../assets/images/BackgroundIcon.png);
