@@ -72,22 +72,8 @@ $card-height-size: 20rem;
 }
 
 
-// body {
-//     @include flex-col-center();
-// }
 
-// .body-sec {
-//     width: 100%;
-//     min-width: 37.5rem;
-//     // width: 37.5rem;
-//     @include flex-col-center();
-// }
-
-// header {
-//     color: $primary-text-color;
-//     background-color: $main-color
-// }
-
+// Header style
 .hdr {
     width: 100%;
     max-width: 768px;
@@ -162,54 +148,11 @@ h2 {
     color: $card-title-color;
 }
 
-// .hdr-main {
-//     // @include flex-col-left;
-
-
-//     width: 100%;
-
-//     .hdr-title {
-//         background-color: $main-color;
-//         // margin: 4rem;
-//         margin: 10%;
-//         width:100%  ;
-//     }
-//     .hdr-title-logo {
-//         @include flex-row-center;
-//         gap: 0.5rem;
-//         justify-content: start;
-//         img {
-//             width: $logo-width;
-//             height: $logo-height;
-//         }
-//         h1 {
-//             @include title-text;
-//         }
-//     }
-//     p {
-//         padding-left: 0.5rem;
-//         font-size: $small-font-size;
-//     }
-//     .hdr-menu-sec {
-//         background-color: $footer-color;
-//         width: 100%;
-//         padding: 0;
-//         button {
-//             background-color: $main-color;
-//             width: $btn-width;
-//             height: $btn-height;
-//             // margin: 1.7rem 1.3rem;
-//             margin: 1.3rem 5%;
-//             border-radius: 0.8rem;
-//         }
-//     }
-// }
 
 .body-main {
     @include flex-col-center;
     gap: 3.9rem;
     background-color: #F5F5F5;
-    display: none;
 
     .body-hdr {
         // background-image:url(../assets/images/BackgroundIcon.png);
@@ -302,4 +245,104 @@ footer {
     font-size: $smaller-font-size;
     color: $primary-text-color;
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .hdr {
+        width: 100%;
+        max-width: 1023px;
+        // padding-top: 58px; 
+
+        .hdr-title {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+            .hdr-logo {
+                
+                h1 {
+                    color: rgba(#FFFFFF, $alpha: 0.9);
+                    font-size: 30px;
+                    font-weight: 700
+                }
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        .hdr-nav{
+            .hdr-nav-btn{
+                display: none;
+            }
+        .hdr-nav-list{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            
+            a{
+                li{
+                    color: #FFFFFF;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .hdr {
+        width: 100%;
+        // padding-top: 58px; 
+
+        .hdr-title {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+            .hdr-logo {
+                img {
+                width: 57.86px;
+                height: 48.65px;
+            }
+                h1 {
+                    color: rgba(#FFFFFF, $alpha: 0.9);
+                    font-size: 40px;
+                    font-weight: 700
+                }
+            }
+
+            p {
+                font-size: 18 px;
+                font-weight: 500;
+            }
+        }
+        .hdr-nav{
+            .hdr-nav-btn{
+                display: none;
+            }
+        .hdr-nav-list{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            
+            a{
+                li{
+                    color: #FFFFFF;
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    }
+    
 }

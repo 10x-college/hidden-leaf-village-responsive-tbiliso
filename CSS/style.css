@@ -80,7 +80,6 @@ h2 {
   align-items: center;
   gap: 3.9rem;
   background-color: #F5F5F5;
-  display: none;
 }
 .body-main .body-hdr {
   background-image: linear-gradient(rgba(42, 42, 42, 0.9), rgba(42, 42, 42, 0.9)), url(../assets/images/BackgroundIcon.png);
@@ -165,6 +164,82 @@ footer {
   font-size: 1.2rem;
   color: #FFFFFF;
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hdr {
+    width: 100%;
+    max-width: 1023px;
+  }
+  .hdr .hdr-title {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .hdr .hdr-title .hdr-logo h1 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .hdr .hdr-title p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .hdr .hdr-nav .hdr-nav-btn {
+    display: none;
+  }
+  .hdr .hdr-nav .hdr-nav-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .hdr .hdr-nav .hdr-nav-list a li {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hdr {
+    width: 100%;
+  }
+  .hdr .hdr-title {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .hdr .hdr-title .hdr-logo img {
+    width: 57.86px;
+    height: 48.65px;
+  }
+  .hdr .hdr-title .hdr-logo h1 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .hdr .hdr-title p {
+    font-size: 18 px;
+    font-weight: 500;
+  }
+  .hdr .hdr-nav .hdr-nav-btn {
+    display: none;
+  }
+  .hdr .hdr-nav .hdr-nav-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .hdr .hdr-nav .hdr-nav-list a li {
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 500;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
