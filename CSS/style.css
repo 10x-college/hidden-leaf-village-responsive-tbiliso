@@ -11,24 +11,59 @@ html {
   font-family: Inter, sans-serif;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.body-sec {
-  max-width: 37.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-header {
-  color: #FFFFFF;
+.hdr {
+  width: 100%;
+  max-width: 768px;
   background-color: #FF6B1A;
+  color: #FFFFFF;
+  padding-top: 39px;
+}
+.hdr .hdr-title {
+  margin: 0 0 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hdr .hdr-title .hdr-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  align-items: center;
+}
+.hdr .hdr-title .hdr-logo img {
+  width: 24px;
+  height: 24px;
+}
+.hdr .hdr-title .hdr-logo h1 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 24px;
+  font-weight: 700;
+}
+.hdr .hdr-title p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.hdr .hdr-nav {
+  background-color: #1A1A1A;
+  width: 100%;
+}
+.hdr .hdr-nav .hdr-nav-btn {
+  margin: 17px 13px;
+  background-color: #FF6B1A;
+  padding: 7px 17px 7px 13px;
+  border-radius: 8px;
+}
+.hdr .hdr-nav .hdr-nav-btn img {
+  width: 17px;
+  height: 14px;
+}
+.hdr .hdr-nav .hdr-nav-btn span {
+  font-size: 19px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.hdr .hdr-nav .hdr-nav-list {
+  display: none;
 }
 
 h2 {
@@ -38,59 +73,14 @@ h2 {
   color: #000000;
 }
 
-.hdr-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  width: 100%;
-}
-.hdr-main .hdr-title {
-  background-color: #FF6B1A;
-  margin: 4rem;
-}
-.hdr-main .hdr-title-logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  justify-content: start;
-}
-.hdr-main .hdr-title-logo img {
-  width: 2.4rem;
-  height: 2.018rem;
-}
-.hdr-main .hdr-title-logo h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 100%;
-}
-.hdr-main p {
-  padding-left: 0.5rem;
-  font-size: 1.4rem;
-}
-.hdr-main .hdr-menu-sec {
-  background-color: #1A1A1A;
-  width: 100%;
-  padding: 0;
-}
-.hdr-main .hdr-menu-sec button {
-  background-color: #FF6B1A;
-  width: 10.3rem;
-  height: 3.7rem;
-  margin: 1.7rem 1.3rem;
-  border-radius: 0.8rem;
-}
-
 .body-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 3.9rem;
   background-color: #F5F5F5;
-  padding-bottom: 16rem;
+  display: none;
 }
 .body-main .body-hdr {
   background-image: linear-gradient(rgba(42, 42, 42, 0.9), rgba(42, 42, 42, 0.9)), url(../assets/images/BackgroundIcon.png);
@@ -105,6 +95,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  width: 100%;
 }
 .body-main .body-hdr h2 {
   font-size: 2.4rem;
@@ -118,6 +109,31 @@ h2 {
   font-size: 1.6rem;
   text-align: center;
 }
+.body-main .body-main-grid {
+  gap: 3rem;
+  padding-bottom: 16rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+}
+.body-main .body-main-grid :nth-child(1) {
+  order: 1;
+}
+.body-main .body-main-grid :nth-child(2) {
+  order: 2;
+}
+.body-main .body-main-grid :nth-child(3) {
+  order: 3;
+}
+.body-main .body-main-grid :nth-child(4) {
+  order: 4;
+}
+.body-main .body-main-grid :nth-child(5) {
+  order: 5;
+}
+.body-main .body-main-grid :nth-child(6) {
+  order: 6;
+}
 .body-main .card {
   width: 32.4rem;
   height: 20rem;
@@ -129,7 +145,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  gap: 1rem;
 }
 .body-main .card .card-hdr {
   display: flex;
@@ -149,6 +164,7 @@ footer {
   background-color: #1A1A1A;
   font-size: 1.2rem;
   color: #FFFFFF;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
