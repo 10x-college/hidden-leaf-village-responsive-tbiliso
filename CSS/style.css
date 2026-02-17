@@ -13,7 +13,6 @@ html {
 
 .hdr {
   width: 100%;
-  max-width: 76.8rem;
   background-color: #FF6B1A;
   color: #FFFFFF;
   padding-top: 3.9rem;
@@ -110,7 +109,7 @@ h2 {
 }
 .body-main .body-main-grid {
   gap: 3rem;
-  padding-bottom: 16rem;
+  padding-bottom: 15rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
@@ -145,13 +144,15 @@ footer {
   background-color: #1A1A1A;
   font-size: 1.2rem;
   color: #FFFFFF;
-  display: none;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    padding: 0.5rem;
+  }
   .hdr {
     width: 100%;
-    max-width: 1023px;
   }
   .hdr .hdr-title {
     width: 100%;
@@ -180,7 +181,7 @@ footer {
   }
   .hdr .hdr-nav .hdr-nav-list a li {
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
   }
   .body-main .body-hdr {
@@ -189,10 +190,17 @@ footer {
   .body-main .body-main-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  footer {
+    font-size: 1.4;
+  }
 }
 @media screen and (min-width: 1024px) {
+  body {
+    padding: 0.5rem;
+  }
   .hdr {
     width: 100%;
+    min-width: 102.4rem;
   }
   .hdr .hdr-title {
     width: 100%;
@@ -233,6 +241,9 @@ footer {
   }
   .body-main .body-main-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  footer {
+    font-size: 1.6;
   }
 }
 
