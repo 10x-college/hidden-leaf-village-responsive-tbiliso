@@ -13,13 +13,13 @@ html {
 
 .hdr {
   width: 100%;
-  max-width: 768px;
+  max-width: 76.8rem;
   background-color: #FF6B1A;
   color: #FFFFFF;
-  padding-top: 39px;
+  padding-top: 3.9rem;
 }
 .hdr .hdr-title {
-  margin: 0 0 40px 40px;
+  margin: 0 0 4rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,20 +27,20 @@ html {
 .hdr .hdr-title .hdr-logo {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.5rem;
   align-items: center;
 }
 .hdr .hdr-title .hdr-logo img {
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 .hdr .hdr-title .hdr-logo h1 {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
 }
 .hdr .hdr-title p {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 .hdr .hdr-nav {
@@ -48,17 +48,17 @@ html {
   width: 100%;
 }
 .hdr .hdr-nav .hdr-nav-btn {
-  margin: 17px 13px;
+  margin: 1.7rem 1.3rem;
   background-color: #FF6B1A;
-  padding: 7px 17px 7px 13px;
-  border-radius: 8px;
+  padding: 0.7rem 1.7rem 0.7rem 1.3rem;
+  border-radius: 0.8rem;
 }
 .hdr .hdr-nav .hdr-nav-btn img {
-  width: 17px;
-  height: 14px;
+  width: 1.7rem;
+  height: 1.4rem;
 }
 .hdr .hdr-nav .hdr-nav-btn span {
-  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 500;
   color: #FFFFFF;
 }
@@ -80,7 +80,6 @@ h2 {
   align-items: center;
   gap: 3.9rem;
   background-color: #F5F5F5;
-  display: none;
 }
 .body-main .body-hdr {
   background-image: linear-gradient(rgba(42, 42, 42, 0.9), rgba(42, 42, 42, 0.9)), url(../assets/images/BackgroundIcon.png);
@@ -115,24 +114,6 @@ h2 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
-}
-.body-main .body-main-grid :nth-child(1) {
-  order: 1;
-}
-.body-main .body-main-grid :nth-child(2) {
-  order: 2;
-}
-.body-main .body-main-grid :nth-child(3) {
-  order: 3;
-}
-.body-main .body-main-grid :nth-child(4) {
-  order: 4;
-}
-.body-main .body-main-grid :nth-child(5) {
-  order: 5;
-}
-.body-main .body-main-grid :nth-child(6) {
-  order: 6;
 }
 .body-main .card {
   width: 32.4rem;
@@ -180,11 +161,11 @@ footer {
   }
   .hdr .hdr-title .hdr-logo h1 {
     color: rgba(255, 255, 255, 0.9);
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
   }
   .hdr .hdr-title p {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
   }
   .hdr .hdr-nav .hdr-nav-btn {
@@ -201,6 +182,12 @@ footer {
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 500;
+  }
+  .body-main .body-hdr {
+    background-size: 22.65rem 19.047rem;
+  }
+  .body-main .body-main-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -219,11 +206,11 @@ footer {
   }
   .hdr .hdr-title .hdr-logo h1 {
     color: rgba(255, 255, 255, 0.9);
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 700;
   }
   .hdr .hdr-title p {
-    font-size: 18 px;
+    font-size: 1.8rem;
     font-weight: 500;
   }
   .hdr .hdr-nav .hdr-nav-btn {
@@ -240,6 +227,12 @@ footer {
     color: #FFFFFF;
     font-size: 17px;
     font-weight: 500;
+  }
+  .body-main .body-hdr {
+    background-size: 30.2rem 25.396rem;
+  }
+  .body-main .body-main-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
